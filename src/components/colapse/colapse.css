@@ -1,0 +1,84 @@
+.active-colapse-text {
+  transition: 1s;
+  background-color: rgb(192, 184, 184);
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.active-colapse-text ul{
+  list-style-type: none;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.67px;
+text-align: left;
+
+}
+.colapse-text {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+
+
+  p {
+    
+    color: black;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.67px;
+text-align: left;
+
+  }
+
+  .colapse{
+    
+    background-color: #FF6060;
+    color: white;
+    width: 80%;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    margin: 20px;
+
+   
+    
+  }
+
+.colapse h2{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.67px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding-left: 10px;
+margin: 0;
+}
+
+  .arrow-colapse{
+    margin: 15px;
+    transition: 1s;
+  }
+
+  .isArrowOpen{
+    transform:rotate(180deg);
+    transition: 1s;
+  }
+
+  @media screen and (max-width: 765px) {
+    .colapse{
+      min-width: 100%;
+    }
+  }

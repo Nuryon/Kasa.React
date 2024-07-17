@@ -1,0 +1,21 @@
+.about-colapse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: space-around;
+}
+
+main{
+    max-height: 2440px;
+}
+
+@media screen and (max-width: 765px) {
+    main{
+        padding: 20px;
+    }
+    
+    .about{
+    margin-top:-16px;
+    }
+    }
