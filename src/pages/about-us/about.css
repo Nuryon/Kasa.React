@@ -14,9 +14,7 @@
     box-sizing: border-box;
 }
 
-main {
-    max-height: 2440px;
-}
+
 
 @media screen and (max-width: 765px) {
     main {
