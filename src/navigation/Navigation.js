@@ -12,7 +12,7 @@ const Navigation = () => {
       <Header />
       <main>
         <Routes>
-          <Route exact path="/kasa" element={<Home />} />
+          <Route exact path="/kasa/" element={<Home />} />
           <Route exact path="/kasa/about-us" element={<AboutUs />} />
           <Route exact path="/kasa/error-404" element={<Error404 />} />
           <Route exact path="/kasa/logement/:id" element={<Logement />} />
