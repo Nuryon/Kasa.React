@@ -11,7 +11,7 @@ const Header = () => {
       <nav>
         <ul className="about-list">
           <NavLink
-            to="/"
+            to="/kasa"
             className={({ isActive }) => {
               return isActive ? "link active" : "link";
             }}
@@ -19,7 +19,7 @@ const Header = () => {
             Accueil
           </NavLink>
           <NavLink
-            to="/about-us"
+            to="/kasa/about-us"
             className={({ isActive }) => {
               return isActive ? "link active" : "link";
             }}

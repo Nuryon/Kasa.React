@@ -7,7 +7,7 @@ const Cards = () => {
     <section className="gallery">
       {logements.map((logements, index) => (
         <Link
-          to={"/logement/" + logements.id}
+          to={"/kasa/logement/" + logements.id}
           key={index}
           style={{ backgroundImage: `url(${logements.cover})` }}
         >
