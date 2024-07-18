@@ -1,84 +1,57 @@
-.active-colapse-text {
-  transition: 1s;
-  background-color: rgb(192, 184, 184);
-  color: black;
-  font-size: 15px;
-  font-weight: 400;
-  padding: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.active-colapse-text ul{
+.collapse-container ul {
   list-style-type: none;
-font-family: Montserrat;
-font-size: 18px;
-font-weight: 400;
-line-height: 25.67px;
-text-align: left;
-
-}
-.colapse-text {
-    height: 0;
-    overflow: hidden;
-    transition: 1s;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-  p {
-    
-    color: black;
-    font-family: Montserrat;
-font-size: 18px;
-font-weight: 400;
-line-height: 25.67px;
-text-align: left;
-
-  }
-
-  .colapse{
-    
-    background-color: #FF6060;
-    color: white;
-    width: 80%;
-    border-radius: 10px;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: 1s;
-    display: flex;
-    margin: 20px;
-
-   
-    
-  }
-
-.colapse h2{
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25.67px;
-  text-align: left;
+.collapse-container__title {
+  cursor: pointer;
   display: flex;
+  margin: 0;
+  background-color: #ff6060;
   justify-content: space-between;
-  align-items: center;
-padding-left: 10px;
-margin: 0;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-  .arrow-colapse{
-    margin: 15px;
-    transition: 1s;
-  }
+.collapse-container__arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .isArrowOpen{
-    transform:rotate(180deg);
-    transition: 1s;
-  }
+.collapse-container__arrow-container__arrow {
+  width: 24px;
+  height: 14px;
+}
 
-  @media screen and (max-width: 765px) {
-    .colapse{
-      min-width: 100%;
-    }
-  }
+.collapse-container__arrow-container__arrow__in {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(-180deg);
+}
+
+.collapse-container__arrow-container__arrow__out {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.collapse-container__content__text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+.collapse-container__content__open {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+}

@@ -1,61 +1,53 @@
 import React, { useState } from "react";
 import "./colapse.css";
 
-function Colapse(props) {
-  const { title, text, isList, list } = props;
- 
-  const [activeText, setActiveText] = useState(false);
- 
+const Collapse = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const onShowText = () => {
-    setActiveText(!activeText);
-  };
-  const toggleCollapse = () => {
-    setIsOpen(!isOpen);
-  };
-
-  /**onShowText 
-   * 
-   */
   return (
-    <div className="colapse">
-       <h2  onClick={toggleCollapse}>
-        <span>{title}</span>
-        <img
-         className={`arrow-colapse ${isOpen ? "isArrowOpen" : ""}`}
-          src={require("./arrow.png")} 
-          alt="Toggle Arrow"
-          onClick={onShowText}
-        />
-      </h2>
-      <div className={isOpen ? "active-colapse-text" : "colapse-text"}>
-        {isList ? (
-          <ul>
-            {list.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>{text}</p>
-        )}
+    <div className="collapse-container">
+      <h3
+        className="collapse-container__title"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {title}
+        <div className="collapse-container__arrow-container">
+          <img
+            className={
+              isOpen
+                ? "collapse-container__arrow-container__arrow collapse-container__arrow-container__arrow__in"
+                : "collapse-container__arrow-container__arrow collapse-container__arrow-container__arrow__out"
+            }
+            src={require("./arrow.png")}
+            alt=""
+          />
+        </div>
+      </h3>
+      <div
+        className={
+          isOpen
+            ? "collapse-container__content is-open"
+            : "collapse-container__content"
+        }
+      >
+        <div
+          className={`collapse-container__content__text ${
+            isOpen ? "collapse-container__content__open" : ""
+          }`}
+        >
+          {Array.isArray(text) ? (
+            <ul>
+              {text.map((content, i) => (
+                <li key={content + "-" + i}>{content}</li>
+              ))}
+            </ul>
+          ) : (
+            <div>{text}</div>
+          )}
+        </div>
       </div>
-   
-   
-      
     </div>
-     /***<div>
-      {Array.isArray(liste2.equipements) && (
-          <ul>
-            {liste2.equipements.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        )} 
-      </div> ***/
-
   );
-}
+};
 
-export default Colapse;
-
+export default Collapse;

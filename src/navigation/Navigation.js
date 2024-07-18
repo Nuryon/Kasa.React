@@ -12,14 +12,14 @@ const Navigation = () => {
       <Header />
       <main>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about-us" element={<AboutUs />} />
-          <Route exact path="/error-404" element={<Error404 />} />
-          <Route exact path="/logement/:id" element={<Logement />} />
+          <Route exact path="/kasa" element={<Home />} />
+          <Route exact path="/kasa/about-us" element={<AboutUs />} />
+          <Route exact path="/kasa/error-404" element={<Error404 />} />
+          <Route exact path="/kasa/logement/:id" element={<Logement />} />
           <Route
             exact
             path="/*"
-            element={<Navigate replace to="/error-404" />}
+            element={<Navigate replace to="/kasa/error-404" />}
           />
         </Routes>
       </main>

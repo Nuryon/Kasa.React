@@ -1,12 +1,14 @@
 import React from "react";
 import Colapse from "../../components/colapse/Colapse";
+import "./about.css";
 import aboutUsList from "./aboutUsList.json";
-import "./about.css"
 const AboutUs = () => {
   return (
     <div className="about-colapse">
       {aboutUsList.map((about) => (
-        <Colapse title={about.title} text={about.text} />
+        <div className="about-colapse-content" key={about.title}>
+          <Colapse title={about.title} text={about.text} />{" "}
+        </div>
       ))}
     </div>
   );

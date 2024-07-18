@@ -1,21 +1,29 @@
-.about-colapse{
+.about-colapse {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     justify-content: space-around;
+    margin-top: 25px;
 }
 
-main{
+.about-colapse-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+main {
     max-height: 2440px;
 }
 
 @media screen and (max-width: 765px) {
-    main{
+    main {
         padding: 20px;
     }
-    
-    .about{
-    margin-top:-16px;
+
+    .about {
+        margin-top: -16px;
     }
-    }
+}

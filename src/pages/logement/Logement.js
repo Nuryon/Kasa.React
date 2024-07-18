@@ -4,8 +4,8 @@ import Carousel from "../../components/carousel/Carousel";
 import Colapse from "../../components/colapse/Colapse";
 import logements from "../../data/logements.json";
 
-import "./logement.css";
 import Note from "../../components/Note/Note";
+import "./logement.css";
 
 const Logement = () => {
   const navigate = useNavigate();
@@ -47,7 +47,9 @@ const Logement = () => {
           <div className="user">
             <div className="logements-host">
               <p className="name">{activeLogement.host.name.split(" ")[0]}</p>
-              <p className="lastname">{activeLogement.host.name.split(" ")[1]}</p>
+              <p className="lastname">
+                {activeLogement.host.name.split(" ")[1]}
+              </p>
             </div>
             <img
               src={activeLogement.host.picture}
@@ -59,11 +61,13 @@ const Logement = () => {
       </div>
 
       <div className="colapse-box">
-        <Colapse title="Description" text={activeLogement.description} isList={false}/>
+        <div className="logement-colapse">
+          <Colapse title="Description" text={activeLogement.description} />
+        </div>
 
-        <Colapse title="Equipements" isList={true} list={activeLogement.equipments} />
-        
-       
+        <div className="logement-colapse">
+          <Colapse title="Equipements" text={activeLogement.equipments} />
+        </div>
       </div>
     </div>
   );
