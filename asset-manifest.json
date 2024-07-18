@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Kasa/static/css/main.4c7b7c56.css",
-    "main.js": "/Kasa/static/js/main.9303c4ec.js",
-    "static/js/453.4b887e45.chunk.js": "/Kasa/static/js/453.4b887e45.chunk.js",
-    "static/media/banner2.png": "/Kasa/static/media/banner2.ca36510f694dfe1d4bf6.png",
-    "static/media/logo-header.svg": "/Kasa/static/media/logo-header.759702e80d2cca5e6d54b41ca6682c02.svg",
-    "static/media/logo-footer.svg": "/Kasa/static/media/logo-footer.879b500939b17c84a3f7a1633edae6bf.svg",
-    "static/media/emptystar.svg": "/Kasa/static/media/emptystar.54f4ed4639db6a14ad1ca7301f128451.svg",
-    "static/media/fullstar.svg": "/Kasa/static/media/fullstar.97ab128b292af2ed2778118ed17e313d.svg",
-    "index.html": "/Kasa/index.html",
-    "static/media/arrowright.svg": "/Kasa/static/media/arrowright.88153a5d119c2744ffe34dca1ef843df.svg",
-    "static/media/arrowleft.svg": "/Kasa/static/media/arrowleft.19918a1634b1441a25ae0b50e6b1f85b.svg",
-    "main.4c7b7c56.css.map": "/Kasa/static/css/main.4c7b7c56.css.map",
-    "main.9303c4ec.js.map": "/Kasa/static/js/main.9303c4ec.js.map",
-    "453.4b887e45.chunk.js.map": "/Kasa/static/js/453.4b887e45.chunk.js.map"
+    "main.css": "/kasa/static/css/main.2691c19b.css",
+    "main.js": "/kasa/static/js/main.c2d59fca.js",
+    "static/js/453.4b887e45.chunk.js": "/kasa/static/js/453.4b887e45.chunk.js",
+    "static/media/banner2.png": "/kasa/static/media/banner2.ca36510f694dfe1d4bf6.png",
+    "static/media/logo-header.svg": "/kasa/static/media/logo-header.759702e80d2cca5e6d54b41ca6682c02.svg",
+    "static/media/logo-footer.svg": "/kasa/static/media/logo-footer.879b500939b17c84a3f7a1633edae6bf.svg",
+    "static/media/emptystar.svg": "/kasa/static/media/emptystar.54f4ed4639db6a14ad1ca7301f128451.svg",
+    "static/media/fullstar.svg": "/kasa/static/media/fullstar.97ab128b292af2ed2778118ed17e313d.svg",
+    "index.html": "/kasa/index.html",
+    "static/media/arrowright.svg": "/kasa/static/media/arrowright.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/arrowleft.svg": "/kasa/static/media/arrowleft.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "main.2691c19b.css.map": "/kasa/static/css/main.2691c19b.css.map",
+    "main.c2d59fca.js.map": "/kasa/static/js/main.c2d59fca.js.map",
+    "453.4b887e45.chunk.js.map": "/kasa/static/js/453.4b887e45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7b7c56.css",
-    "static/js/main.9303c4ec.js"
+    "static/css/main.2691c19b.css",
+    "static/js/main.c2d59fca.js"
   ]
 }
